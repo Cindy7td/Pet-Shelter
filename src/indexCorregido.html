@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title> Pet Shelter </title>
+ 
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+ 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ 
+  <title> Title </title>
+</head>
+<body>
+    <app-root></app-root>
+
+    <div class = "container" style="padding-top: 60px;"> <!--Style es opcional-->
+      <h1 align="center"> Pet Shelter </h1>
+      <p> Cuando adoptas una mascota contribuyes a la disminución de animales callejeros. </p>
+
+      <div class="row">
+        <div class="col-xs-2">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filtro</button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Todos</a>
+              <a class="dropdown-item" href="#">Perros</a>
+              <a class="dropdown-item" href="#">Gatos</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" id="mymodal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title">Información específica</h2>
+              <button class="close" type="button"  data-dismiss="modal">x</button>
+            </div> <!--end .modal-header-->
+            <div class="modal-body">
+              <div class="row">
+                <div class = "col-xs-12 col-sm-60px col-md-78px col-lg-95px">
+                      <img class="card-img-top" src="perro3.jpg" alt="Card image cap">
+                      <h5 class="card-title">Solovino</h5>
+                      <p class="card-body">Raza</p>
+                      <p class="card-body">Tamaño</p>
+                      <p class="card-body">Carácter</p>
+                      <p class="card-body">Edad</p>
+                      <p class="card-body">Necesidades</p>
+                      <p class="card-body">Información sanitaria</p>
+                      <p align="center"><strong>Para adoptar llena lo siguiente:</strong></p>
+                </div>
+              </div>
+              <form>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Nombre completo</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Correo electrónico</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Domicilio</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Ciudad donde reside</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>Chihuahua</option>
+                      <option>Delicias</option>
+                      <option>Cuauhtémoc</option>
+                      <option>Juárez</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlFile1">Foto de la INE/IFE</label>
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlFile1">Comprobante de pago</label>
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                  </div>
+                  <p> *Nota: Al llegar al centro de adopción se pedirá de nuevo la identificación y se le pedirá llenar un contrato de adopción en el que se describen el compromiso que conlleva la adopción de una mascota.* </p>
+                  <p align="center">
+                    <button  type="button" class="btn btn-primary btn-lg">Enviar</button>
+                 </p>
+              </form>
+            </div> <!--end .modal-body-->
+            <div class="modal-footer">
+              <button class="btn btn-secondary" type="button"  data-dismiss="modal">Cerrar</button>
+            </div> <!--end .modal-footer-->
+          </div> <!--end .modal-content--> 
+        </div> <!--end .modal-dialog-->
+      </div> <!--end .modal-->
+
+      <div class="modal" id="mymodal2">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title">Información específica</h2>
+              <button class="close" type="button"  data-dismiss="modal">x</button>
+            </div> <!--end .modal-header-->
+            <div class="modal-body">
+              <div class="row">
+                <div class = "col-xs-12 col-sm-60px col-md-78px col-lg-95px">
+                      <img class="card-img-top" src="perro.jpg" alt="Card image cap">
+                      <h5 class="card-title">Solosefue</h5>
+                      <p class="card-body">Raza</p>
+                      <p class="card-body">Tamaño</p>
+                      <p class="card-body">Carácter</p>
+                      <p class="card-body">Edad</p>
+                      <p class="card-body">Necesidades</p>
+                      <p class="card-body">Información sanitaria</p>
+                      <p align="center"><strong>Para adoptar llena lo siguiente:</strong></p>
+                </div>
+              </div>
+              <form>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Nombre completo</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Correo electrónico</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Domicilio</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Ciudad donde reside</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>Chihuahua</option>
+                      <option>Delicias</option>
+                      <option>Cuauhtémoc</option>
+                      <option>Juárez</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlFile1">Foto de la INE/IFE</label>
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlFile1">Comprobante de pago</label>
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                  </div>
+                  <p> *Nota: Al llegar al centro de adopción se pedirá de nuevo la identificación y se le pedirá llenar un contrato de adopción en el que se describen el compromiso que conlleva la adopción de una mascota.* </p>
+                  <p align="center">
+                    <button  type="button" class="btn btn-primary btn-lg">Enviar</button>
+                 </p>
+              </form>
+            </div> <!--end .modal-body-->
+            <div class="modal-footer">
+              <button class="btn btn-secondary" type="button"  data-dismiss="modal">Cerrar</button>
+            </div> <!--end .modal-footer-->
+          </div> <!--end .modal-content--> 
+        </div> <!--end .modal-dialog-->
+      </div> <!--end .modal-->
+
+      <div class="modal" id="mymodal3">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title">Información específica</h2>
+              <button class="close" type="button"  data-dismiss="modal">x</button>
+            </div> <!--end .modal-header-->
+            <div class="modal-body">
+              <div class="row">
+                <div class = "col-xs-12 col-sm-60px col-md-78px col-lg-95px">
+                      <img class="card-img-top" src="gato3.jpg" alt="Card image cap">
+                      <h5 class="card-title">Gordin</h5>
+                      <p class="card-body">Raza</p>
+                      <p class="card-body">Tamaño</p>
+                      <p class="card-body">Carácter</p>
+                      <p class="card-body">Edad</p>
+                      <p class="card-body">Necesidades</p>
+                      <p class="card-body">Información sanitaria</p>
+                      <p align="center"><strong>Para adoptar llena lo siguiente:</strong></p>
+                </div>
+              </div>
+              <form>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Nombre completo</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Correo electrónico</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Domicilio</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Ciudad donde reside</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>Chihuahua</option>
+                      <option>Delicias</option>
+                      <option>Cuauhtémoc</option>
+                      <option>Juárez</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlFile1">Foto de la INE/IFE</label>
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlFile1">Comprobante de pago</label>
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                  </div>
+                  <p> *Nota: Al llegar al centro de adopción se pedirá de nuevo la identificación y se le pedirá llenar un contrato de adopción en el que se describen el compromiso que conlleva la adopción de una mascota.* </p>
+                  <p align="center">
+                    <button  type="button" class="btn btn-primary btn-lg">Enviar</button>
+                 </p>
+              </form>
+            </div> <!--end .modal-body-->
+            <div class="modal-footer">
+              <button class="btn btn-secondary" type="button"  data-dismiss="modal">Cerrar</button>
+            </div> <!--end .modal-footer-->
+          </div> <!--end .modal-content--> 
+        </div> <!--end .modal-dialog-->
+      </div> <!--end .modal-->
+
+      <div class="modal" id="mymodal4">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title">Información específica</h2>
+              <button class="close" type="button"  data-dismiss="modal">x</button>
+            </div> <!--end .modal-header-->
+            <div class="modal-body">
+              <div class="row">
+                <div class = "col-xs-12 col-sm-60px col-md-78px col-lg-95px">
+                      <img class="card-img-top" src="gato2.jpg" alt="Card image cap">
+                      <h5 class="card-title">Gordon</h5>
+                      <p class="card-body">Raza</p>
+                      <p class="card-body">Tamaño</p>
+                      <p class="card-body">Carácter</p>
+                      <p class="card-body">Edad</p>
+                      <p class="card-body">Necesidades</p>
+                      <p class="card-body">Información sanitaria</p>
+                      <p align="center"><strong>Para adoptar llena lo siguiente:</strong></p>
+                </div>
+              </div>
+              <form>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Nombre completo</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Correo electrónico</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Domicilio</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Ciudad donde reside</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>Chihuahua</option>
+                      <option>Delicias</option>
+                      <option>Cuauhtémoc</option>
+                      <option>Juárez</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlFile1">Foto de la INE/IFE</label>
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlFile1">Comprobante de pago</label>
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                  </div>
+                  <p> *Nota: Al llegar al centro de adopción se pedirá de nuevo la identificación y se le pedirá llenar un contrato de adopción en el que se describen el compromiso que conlleva la adopción de una mascota.* </p>
+                  <p align="center">
+                    <button  type="button" class="btn btn-primary btn-lg">Enviar</button>
+                 </p>
+              </form>
+            </div> <!--end .modal-body-->
+            <div class="modal-footer">
+              <button class="btn btn-secondary" type="button"  data-dismiss="modal">Cerrar</button>
+            </div> <!--end .modal-footer-->
+          </div> <!--end .modal-content--> 
+        </div> <!--end .modal-dialog-->
+      </div> <!--end .modal-->
+ 
+    
+      <div class="row">
+        <div class = "col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img class="card-img-top" src="perro3.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Solovino</h5>
+          <div class="card-footer">
+            <a href="#"  data-toggle="modal" data-target="#mymodal">Más información</a>
+          </div>
+        </div>
+        </div>
+      </div>
+  
+      <div class = "col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img class="card-img-top" src="perro.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Solosefue</h5>
+          <div class="card-footer">
+            <a href="#"  data-toggle="modal" data-target="#mymodal2">Más información</a>
+          </div>
+        </div>
+        </div>
+      </div>
+
+    
+      <div class = "col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img class="card-img-top" src="gato3.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Gordin</h5>
+          <div class="card-footer">
+            <a href="#"  data-toggle="modal" data-target="#mymodal3">Más información</a>
+          </div>
+        </div>
+        </div>
+      </div>
+
+        <div class = "col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img class="card-img-top" src="gato2.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Gordon</h5>
+          <div class="card-footer">
+            <a href="#"  data-toggle="modal" data-target="#mymodal4">Más información</a>
+          </div>
+        </div>
+      </div>
+      </div>
+
+ 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
