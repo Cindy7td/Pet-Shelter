@@ -4,10 +4,14 @@ import { AppComponent } from './app.component';
 import { RouterModule, Routes } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { PetComponent } from './pet/pet.component';
+import { HomeComponent } from './home/home.component';
+import { PetsService } from './services/pets.service'
+import {DialogModule} from 'primeng/dialog';
+import {PanelModule} from 'primeng/panel';
 
 const appRoutes: Routes = [
-  /*{ path: 'foo', component: FooComponent },
-  { path: '', redirectTo: '/foo', pathMatch: 'full' },*/
+  { path: '', component: HomeComponent },
   { path: '**', component: PageNotFoundComponent }
 ];
 
@@ -15,12 +19,19 @@ const appRoutes: Routes = [
 @NgModule({
     declarations: [
 	AppComponent,
-	PageNotFoundComponent
+	PageNotFoundComponent,
+	PetComponent,
+	HomeComponent
     ],
     imports: [
 	BrowserModule,
 	RouterModule.forRoot(appRoutes,{ enableTracing: true } ),
-	BrowserAnimationsModule
+	BrowserAnimationsModule,
+	DialogModule,
+	PanelModule
+    ],
+    providers:[
+	PetsService
     ],
     bootstrap: [AppComponent]
 })

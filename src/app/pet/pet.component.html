@@ -1,0 +1,60 @@
+<p-dialog header="Información específica" [(visible)]="displayMore">
+    <div class="row">
+        <div class = "col-xs-12 col-sm-60px col-md-78px col-lg-95px">
+            <img class="card-img-top" [src]="pet.image" alt="Card image cap">
+            <h5 class="card-title">{{pet.name}}</h5>
+            <p class="card-body">{{pet.breed}}</p>
+            <p class="card-body">{{pet.size}}</p>
+            <p class="card-body">{{pet.character}}</p>
+            <p class="card-body">{{pet.age}}</p>
+            <p class="card-body">{{pet.needs}}</p>
+            <p class="card-body">{{pet.health_information}}</p>
+        </div>
+    </div>
+    <p-panel header="Para adoptar llena lo siguiente:" [toggleable]="true" [collapsed]="true">
+	<form>
+            <div class="form-group">
+		<label for="exampleFormControlTextarea1">Nombre completo</label>
+		<textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+            </div>
+            <div class="form-group">
+		<label for="exampleFormControlInput1">Correo electrónico</label>
+		<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="form-group">
+		<label for="exampleFormControlTextarea1">Domicilio</label>
+		<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+		<label for="exampleFormControlSelect1">Ciudad donde reside</label>
+		<select class="form-control" id="exampleFormControlSelect1">
+                    <option>Chihuahua</option>
+                    <option>Delicias</option>
+                    <option>Cuauhtémoc</option>
+                    <option>Juárez</option>
+		</select>
+            </div>
+            <div class="form-group">
+		<label for="exampleFormControlFile1">Foto de la INE/IFE</label>
+		<input type="file" class="form-control-file" id="exampleFormControlFile1">
+            </div>
+            <div class="form-group">
+		<label for="exampleFormControlFile1">Comprobante de pago</label>
+		<input type="file" class="form-control-file" id="exampleFormControlFile1">
+            </div>
+            <p> *Nota: Al llegar al centro de adopción se pedirá de nuevo la identificación y se le pedirá llenar un contrato de adopción en el que se describen el compromiso que conlleva la adopción de una mascota.* </p>
+            <p align="center">
+		<button  type="button" class="btn btn-primary btn-lg">Enviar</button>
+            </p>
+	</form>
+    </p-panel>
+</p-dialog>
+<div class="card">
+    <img class="card-img-top" [src]="pet.image" alt="Card image cap">
+    <div class="card-body">
+        <h5 class="card-title">{{pet.name}}</h5>
+        <div class="card-footer">
+	    <a href="#" (click)="showMoreInfo()">Más información</a>
+        </div>
+    </div>
+</div>

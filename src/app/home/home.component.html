@@ -1,0 +1,22 @@
+<h1 align="center"> Pet Shelter </h1>
+<p> Cuando adoptas una mascota contribuyes a la disminución de animales callejeros. </p>
+
+<div class="row">
+    <div class="col-xs-2">
+	<div class="dropdown">
+	    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		Filtro
+	    </button>
+	    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+		<a class="dropdown-item" href="#">Todos</a>
+		<a class="dropdown-item" href="#">Perros</a>
+		<a class="dropdown-item" href="#">Gatos</a>
+	    </div>
+	</div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let pet of pets">
+	<app-pet [pet]="pet" (onAdd)="addPet($event)"></app-pet>
+    </div>
+</div>
